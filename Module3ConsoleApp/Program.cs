@@ -11,9 +11,14 @@ namespace Module3ConsoleApp
             bool HaveIAPet = true;
             double MyShoesSize = 42.0;
             string name = "q";
-            int age = 2;
+            var age = Convert.ToInt32(Console.ReadLine());
             string favcolor = "white";
+            DayOfWeek day = (DayOfWeek)int.Parse(Console.ReadLine());
+            var olddata = 22;
+            byte data = checked ((byte) int.Parse(Console.ReadLine()));
 
+            Console.WriteLine(data);
+            Console.WriteLine(day);
             Console.WriteLine($"My name is {MyName}");
             Console.WriteLine("My age is " + MyAge);
             Console.WriteLine("Do I have a pet? " + HaveIAPet);
